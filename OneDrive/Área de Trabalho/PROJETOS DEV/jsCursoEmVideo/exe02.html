@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+
+    <style>
+        body{
+            background-color: khaki;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Estou testando o que aprendi,</h1>
+    <p>HTML, CSS e Javascript podem agir juntos</p>
+    
+    <script>
+        var nome = prompt('Qual é o seu nome? ')
+        alert( `Olá ${nome}, ficamos felizes em conhece-lo`)
+
+        var n1 = Number(prompt('Digite o primeiro número: '))
+        var n2 = Number(prompt('Digite o segundo número: '))
+
+        var soma = n1 + n2
+        var sub = n1 - n2
+        var multi = n1 * n2
+        var divi = n1/n2
+        var pot = n1 ** n2
+
+        alert(`A soma entre ${n1} e ${n2} é: ${soma}`)
+        alert(`A subtração entre ${n1} e ${n2} é: ${sub}`)
+        alert(`A multiplicação entre ${n1} e ${n2} é: ${multi}`)
+        alert(`A divisão entre ${n1} e ${n2} é: ${divi}`)
+        alert(`A potenciação entre ${n1} e ${n2} é: ${divi}`)
+
+        var idade = Number(prompt('Qual é a sua idade?'))
+        var maiorOuMenor = idade>=18 ? 'Maior de Idade' : 'Menor de Idade'
+
+        alert(`${maiorOuMenor}`)
+
+    </script>
+
+</body>
+</html>

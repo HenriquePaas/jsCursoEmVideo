@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro?</title>
+    <style>
+        body{
+            color: white;
+            background-color:teal;
+            font: normal 15px Arial;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Informe o seu País: </h1>
+    <input type="text" name="pais" id="pais">
+    <button name="enviar" id="enviar" onclick="enviar()"> Resultado</button>
+    <div id="res"> Resultado:</div>
+
+    <script>
+        function enviar(){
+            var paisGet = document.getElementById('pais')
+            var pais = (paisGet.value)
+
+                if (pais == 'Brasil') {
+                    res.innerHTML += 'Você é  brasileiro'
+                }else{
+                    res.innerHTML += 'Você é estrangeiro'
+                }
+        }
+    </script>
+    
+</body>
+</html>
