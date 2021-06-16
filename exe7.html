@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+
+    <style>
+        body{
+            background-color: rgb(62, 62, 128);
+            font: normal 15px Arial;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Qual é a sua velocidade?</h1>
+    <input type="number" name="km" id="km">
+    <button name="enviar" id="enviar" onclick="enviar()">Enviar</button>
+    <div id="vel">Velocidade: </div>
+
+    <script>
+        function enviar(){
+        var kmGet = document.getElementById('km')
+        var km = Number(kmGet.value)
+        vel.innerHTML = `Sua velocidade é de: <strong>${km}</strong> km/h`
+        
+            if(km > 80){
+                vel.innerHTML +='<p>MULTADO! Excesso de Velocidade</p>'
+             }
+        }
+    </script>
+</body>
+</html>
